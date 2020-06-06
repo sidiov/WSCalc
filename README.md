@@ -3,6 +3,7 @@ FFXI Weaponskill Damage Calculator
 
 The goal of this calculator was to help determine if a specific stat was better for a WS. It's all manual entry, as maintaining a list of gear and augments would likely be time consuming and quickly out of date.
     
+    v1.2.7 - Added a Save/Load to file feature
     v1.2.6.1-Added Ground Strike
     v1.2.6 - Added WS and Fotia first hit Acc
     v1.2.5 - Fixed H2H WS not set to replicate fTP
