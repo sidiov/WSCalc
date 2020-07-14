@@ -3,7 +3,9 @@ FFXI Weaponskill Damage Calculator
 
 The goal of this calculator was to help determine if a specific stat was better for a WS. It's all manual entry, as maintaining a list of gear and augments would likely be time consuming and quickly out of date.
     
+    v1.5.1 - Fixed most Job Traits and JP bonuses, assumes master.
     v1.5.0 - Jobs implemented, reduces input fields
+    v1.2.9 - Fixed Apex Arrow
     v1.2.8 - Added Footwork/KAD Tornado/Dragon Kick, added some ranged WS
     v1.2.7 - Added a Save/Load to file feature
     v1.2.6.1-Added Ground Strike
