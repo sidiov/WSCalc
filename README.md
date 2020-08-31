@@ -3,21 +3,6 @@ FFXI Weaponskill Damage Calculator
 
 The goal of this calculator was to help determine if a specific stat was better for a WS. It's all manual entry, as maintaining a list of gear and augments would likely be time consuming and quickly out of date.
     
-    v1.5.3 - Added some lesser used dagger/archery WS
-    v1.5.2 - Can edit the number of iterations for average damages. Building flourish added.
-    v1.5.1 - Fixed most Job Traits and JP bonuses, assumes master.
-    v1.5.0 - Jobs implemented, reduces input fields
-    v1.2.9 - Fixed Apex Arrow
-    v1.2.8 - Added Footwork/KAD Tornado/Dragon Kick, added some ranged WS
-    v1.2.7 - Added a Save/Load to file feature
-    v1.2.6.1-Added Ground Strike
-    v1.2.6 - Added WS and Fotia first hit Acc
-    v1.2.5 - Fixed H2H WS not set to replicate fTP
-    v1.2.3 - Added Dimidiation
-    v1.2.2 - Added Flourishes, Crit Atk Bonus Trait, SA DEX bonus (no gear bonus)
-    v1.1.5 - Added info.
-    v1.1.4 - fixed Jishnu's crit not applying.
-    v1.1.3 - fixed Camlann's bonus.
     
     
     -It's only Windows, and only .exe (seems to work fine under Wine.)
