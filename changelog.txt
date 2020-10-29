@@ -1,3 +1,4 @@
+v1.5.3.1 - Trueflight was in wrong catagory
 v1.5.3 - Added some lesser used dagger/archery WS
 v1.5.2 - Can edit the number of iterations for average damages. Building flourish added.
 v1.5.1 - Fixed most Job Traits and JP bonuses, assumes master.
