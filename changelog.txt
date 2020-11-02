@@ -1,4 +1,4 @@
-v1.5.4 - Added Utu Grip
+v1.5.4 - Added Utu Grip, fixed a bug with orpheus belt in hybrid ws, and now display the orpheus bonus in GUI
 v1.5.3.1 - Trueflight was in wrong catagory
 v1.5.3 - Added some lesser used dagger/archery WS
 v1.5.2 - Can edit the number of iterations for average damages. Building flourish added.
