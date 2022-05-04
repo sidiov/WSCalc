@@ -186,6 +186,8 @@
             this.label47 = new System.Windows.Forms.Label();
             this.cb_Utu = new System.Windows.Forms.CheckBox();
             this.cb_Crepes = new System.Windows.Forms.CheckBox();
+            this.label_ma_notes = new System.Windows.Forms.Label();
+            this.groupBox_ma = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.b_ftp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.track_orph)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_clim)).BeginInit();
@@ -193,6 +195,7 @@
             this.groupBox_dmg.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.groupBox_ma.SuspendLayout();
             this.SuspendLayout();
             // 
             // b_Calc
@@ -216,7 +219,7 @@
             // 
             // b_WSD
             // 
-            this.b_WSD.Location = new System.Drawing.Point(70, 358);
+            this.b_WSD.Location = new System.Drawing.Point(70, 374);
             this.b_WSD.Name = "b_WSD";
             this.b_WSD.Size = new System.Drawing.Size(34, 20);
             this.b_WSD.TabIndex = 26;
@@ -235,7 +238,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 361);
+            this.label2.Location = new System.Drawing.Point(25, 377);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 25;
@@ -398,7 +401,7 @@
             // 
             // b_DMG1
             // 
-            this.b_DMG1.Location = new System.Drawing.Point(70, 449);
+            this.b_DMG1.Location = new System.Drawing.Point(70, 465);
             this.b_DMG1.Name = "b_DMG1";
             this.b_DMG1.Size = new System.Drawing.Size(35, 20);
             this.b_DMG1.TabIndex = 81;
@@ -408,7 +411,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(10, 452);
+            this.label10.Location = new System.Drawing.Point(10, 468);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 13);
             this.label10.TabIndex = 80;
@@ -555,7 +558,7 @@
             // 
             // b_DMG2
             // 
-            this.b_DMG2.Location = new System.Drawing.Point(70, 474);
+            this.b_DMG2.Location = new System.Drawing.Point(70, 490);
             this.b_DMG2.Name = "b_DMG2";
             this.b_DMG2.Size = new System.Drawing.Size(35, 20);
             this.b_DMG2.TabIndex = 82;
@@ -564,7 +567,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(14, 477);
+            this.label19.Location = new System.Drawing.Point(14, 493);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(54, 13);
             this.label19.TabIndex = 47;
@@ -572,7 +575,7 @@
             // 
             // b_DMGr
             // 
-            this.b_DMGr.Location = new System.Drawing.Point(70, 514);
+            this.b_DMGr.Location = new System.Drawing.Point(70, 530);
             this.b_DMGr.Name = "b_DMGr";
             this.b_DMGr.Size = new System.Drawing.Size(35, 20);
             this.b_DMGr.TabIndex = 83;
@@ -581,7 +584,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(2, 514);
+            this.label21.Location = new System.Drawing.Point(2, 530);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(67, 13);
             this.label21.TabIndex = 51;
@@ -589,7 +592,7 @@
             // 
             // b_DMGa
             // 
-            this.b_DMGa.Location = new System.Drawing.Point(70, 540);
+            this.b_DMGa.Location = new System.Drawing.Point(70, 556);
             this.b_DMGa.Name = "b_DMGa";
             this.b_DMGa.Size = new System.Drawing.Size(35, 20);
             this.b_DMGa.TabIndex = 84;
@@ -598,7 +601,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(5, 540);
+            this.label22.Location = new System.Drawing.Point(5, 556);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(64, 13);
             this.label22.TabIndex = 53;
@@ -738,7 +741,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(235, 496);
+            this.label26.Location = new System.Drawing.Point(235, 512);
             this.label26.MaximumSize = new System.Drawing.Size(55, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(40, 26);
@@ -748,7 +751,7 @@
             // 
             // b_Ranks
             // 
-            this.b_Ranks.Location = new System.Drawing.Point(284, 503);
+            this.b_Ranks.Location = new System.Drawing.Point(284, 519);
             this.b_Ranks.Name = "b_Ranks";
             this.b_Ranks.Size = new System.Drawing.Size(35, 20);
             this.b_Ranks.TabIndex = 94;
@@ -759,7 +762,7 @@
             // cb_myth
             // 
             this.cb_myth.AutoSize = true;
-            this.cb_myth.Location = new System.Drawing.Point(237, 460);
+            this.cb_myth.Location = new System.Drawing.Point(237, 476);
             this.cb_myth.Name = "cb_myth";
             this.cb_myth.Size = new System.Drawing.Size(63, 17);
             this.cb_myth.TabIndex = 92;
@@ -845,7 +848,7 @@
             // 
             // b_Ambu
             // 
-            this.b_Ambu.Location = new System.Drawing.Point(284, 537);
+            this.b_Ambu.Location = new System.Drawing.Point(284, 553);
             this.b_Ambu.Name = "b_Ambu";
             this.b_Ambu.Size = new System.Drawing.Size(35, 20);
             this.b_Ambu.TabIndex = 95;
@@ -857,7 +860,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(234, 526);
+            this.label35.Location = new System.Drawing.Point(234, 542);
             this.label35.MaximumSize = new System.Drawing.Size(45, 0);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(43, 39);
@@ -887,7 +890,7 @@
             // cb_relic
             // 
             this.cb_relic.AutoSize = true;
-            this.cb_relic.Location = new System.Drawing.Point(237, 442);
+            this.cb_relic.Location = new System.Drawing.Point(237, 458);
             this.cb_relic.Name = "cb_relic";
             this.cb_relic.Size = new System.Drawing.Size(56, 17);
             this.cb_relic.TabIndex = 91;
@@ -897,7 +900,7 @@
             // 
             // b_da
             // 
-            this.b_da.Location = new System.Drawing.Point(179, 359);
+            this.b_da.Location = new System.Drawing.Point(59, 38);
             this.b_da.Name = "b_da";
             this.b_da.Size = new System.Drawing.Size(35, 20);
             this.b_da.TabIndex = 28;
@@ -906,7 +909,7 @@
             // 
             // b_ta
             // 
-            this.b_ta.Location = new System.Drawing.Point(179, 385);
+            this.b_ta.Location = new System.Drawing.Point(59, 64);
             this.b_ta.Name = "b_ta";
             this.b_ta.Size = new System.Drawing.Size(35, 20);
             this.b_ta.TabIndex = 29;
@@ -915,7 +918,7 @@
             // 
             // b_qa
             // 
-            this.b_qa.Location = new System.Drawing.Point(179, 410);
+            this.b_qa.Location = new System.Drawing.Point(59, 89);
             this.b_qa.Name = "b_qa";
             this.b_qa.Size = new System.Drawing.Size(34, 20);
             this.b_qa.TabIndex = 30;
@@ -925,7 +928,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(120, 364);
+            this.label36.Location = new System.Drawing.Point(0, 43);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(57, 13);
             this.label36.TabIndex = 88;
@@ -934,7 +937,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(128, 388);
+            this.label37.Location = new System.Drawing.Point(8, 67);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(47, 13);
             this.label37.TabIndex = 89;
@@ -943,7 +946,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(126, 414);
+            this.label38.Location = new System.Drawing.Point(6, 93);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(49, 13);
             this.label38.TabIndex = 90;
@@ -1045,7 +1048,7 @@
             // cb_mytham3
             // 
             this.cb_mytham3.AutoSize = true;
-            this.cb_mytham3.Location = new System.Drawing.Point(237, 478);
+            this.cb_mytham3.Location = new System.Drawing.Point(237, 494);
             this.cb_mytham3.Name = "cb_mytham3";
             this.cb_mytham3.Size = new System.Drawing.Size(82, 17);
             this.cb_mytham3.TabIndex = 93;
@@ -1055,7 +1058,7 @@
             // track_orph
             // 
             this.track_orph.LargeChange = 20;
-            this.track_orph.Location = new System.Drawing.Point(264, 378);
+            this.track_orph.Location = new System.Drawing.Point(264, 394);
             this.track_orph.Maximum = 130;
             this.track_orph.Minimum = 19;
             this.track_orph.Name = "track_orph";
@@ -1067,7 +1070,7 @@
             // cb_orph
             // 
             this.cb_orph.AutoSize = true;
-            this.cb_orph.Location = new System.Drawing.Point(271, 335);
+            this.cb_orph.Location = new System.Drawing.Point(271, 351);
             this.cb_orph.Name = "cb_orph";
             this.cb_orph.Size = new System.Drawing.Size(66, 17);
             this.cb_orph.TabIndex = 55;
@@ -1077,7 +1080,7 @@
             // label_orph
             // 
             this.label_orph.AutoSize = true;
-            this.label_orph.Location = new System.Drawing.Point(264, 362);
+            this.label_orph.Location = new System.Drawing.Point(264, 378);
             this.label_orph.Name = "label_orph";
             this.label_orph.Size = new System.Drawing.Size(72, 13);
             this.label_orph.TabIndex = 106;
@@ -1112,7 +1115,7 @@
             // 
             // tb_maccSkill
             // 
-            this.tb_maccSkill.Location = new System.Drawing.Point(173, 449);
+            this.tb_maccSkill.Location = new System.Drawing.Point(173, 465);
             this.tb_maccSkill.Name = "tb_maccSkill";
             this.tb_maccSkill.Size = new System.Drawing.Size(35, 20);
             this.tb_maccSkill.TabIndex = 85;
@@ -1122,7 +1125,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(124, 446);
+            this.label43.Location = new System.Drawing.Point(124, 462);
             this.label43.MaximumSize = new System.Drawing.Size(50, 0);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(48, 26);
@@ -1198,7 +1201,7 @@
             // 
             // b_pdif
             // 
-            this.b_pdif.Location = new System.Drawing.Point(72, 392);
+            this.b_pdif.Location = new System.Drawing.Point(72, 408);
             this.b_pdif.Name = "b_pdif";
             this.b_pdif.Size = new System.Drawing.Size(34, 20);
             this.b_pdif.TabIndex = 27;
@@ -1209,7 +1212,7 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(15, 381);
+            this.label48.Location = new System.Drawing.Point(15, 397);
             this.label48.MaximumSize = new System.Drawing.Size(48, 0);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(47, 39);
@@ -1441,9 +1444,9 @@
             this.label_iterations.AutoSize = true;
             this.label_iterations.Location = new System.Drawing.Point(107, 0);
             this.label_iterations.Name = "label_iterations";
-            this.label_iterations.Size = new System.Drawing.Size(80, 13);
+            this.label_iterations.Size = new System.Drawing.Size(74, 13);
             this.label_iterations.TabIndex = 156;
-            this.label_iterations.Text = "Iterations: 1000";
+            this.label_iterations.Text = "Iterations: 100";
             // 
             // toolTip_damage
             // 
@@ -1457,7 +1460,7 @@
             this.groupBox1.Controls.Add(this.b_fencer);
             this.groupBox1.Controls.Add(this.tb_RAMaccSkill);
             this.groupBox1.Controls.Add(this.label50);
-            this.groupBox1.Location = new System.Drawing.Point(3, 432);
+            this.groupBox1.Location = new System.Drawing.Point(3, 448);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(333, 135);
             this.groupBox1.TabIndex = 86;
@@ -1501,26 +1504,26 @@
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.loadToolStripMenuItem.Text = "&Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(97, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -1535,7 +1538,7 @@
             // averageIterationsToolStripMenuItem
             // 
             this.averageIterationsToolStripMenuItem.Name = "averageIterationsToolStripMenuItem";
-            this.averageIterationsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.averageIterationsToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.averageIterationsToolStripMenuItem.Text = "&Iterations";
             this.averageIterationsToolStripMenuItem.Click += new System.EventHandler(this.averageIterationsToolStripMenuItem_Click);
             // 
@@ -1550,7 +1553,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -1574,7 +1577,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Location = new System.Drawing.Point(247, 182);
+            this.groupBox2.Location = new System.Drawing.Point(247, 198);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(136, 175);
             this.groupBox2.TabIndex = 139;
@@ -1705,11 +1708,35 @@
             this.cb_Crepes.Text = "Crepuscular Knife?";
             this.cb_Crepes.UseVisualStyleBackColor = true;
             // 
+            // label_ma_notes
+            // 
+            this.label_ma_notes.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_ma_notes.Location = new System.Drawing.Point(123, 344);
+            this.label_ma_notes.Name = "label_ma_notes";
+            this.label_ma_notes.Size = new System.Drawing.Size(118, 28);
+            this.label_ma_notes.TabIndex = 157;
+            this.label_ma_notes.Text = "Do not include multihit job traits EXCEPT BLU";
+            // 
+            // groupBox_ma
+            // 
+            this.groupBox_ma.Controls.Add(this.label38);
+            this.groupBox_ma.Controls.Add(this.label37);
+            this.groupBox_ma.Controls.Add(this.label36);
+            this.groupBox_ma.Controls.Add(this.b_qa);
+            this.groupBox_ma.Controls.Add(this.b_ta);
+            this.groupBox_ma.Controls.Add(this.b_da);
+            this.groupBox_ma.Location = new System.Drawing.Point(120, 337);
+            this.groupBox_ma.Name = "groupBox_ma";
+            this.groupBox_ma.Size = new System.Drawing.Size(117, 118);
+            this.groupBox_ma.TabIndex = 158;
+            this.groupBox_ma.TabStop = false;
+            // 
             // wsd_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 571);
+            this.ClientSize = new System.Drawing.Size(609, 586);
+            this.Controls.Add(this.label_ma_notes);
             this.Controls.Add(this.cb_Crepes);
             this.Controls.Add(this.cb_Utu);
             this.Controls.Add(this.label49);
@@ -1762,12 +1789,6 @@
             this.Controls.Add(this.label39);
             this.Controls.Add(this.b_mdmg);
             this.Controls.Add(this.label_hits);
-            this.Controls.Add(this.label38);
-            this.Controls.Add(this.label37);
-            this.Controls.Add(this.label36);
-            this.Controls.Add(this.b_qa);
-            this.Controls.Add(this.b_ta);
-            this.Controls.Add(this.b_da);
             this.Controls.Add(this.label_ftp);
             this.Controls.Add(this.label_mods);
             this.Controls.Add(this.label35);
@@ -1847,10 +1868,11 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gpb_mob);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox_ma);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(625, 610);
+            this.MaximumSize = new System.Drawing.Size(625, 625);
             this.MinimumSize = new System.Drawing.Size(625, 610);
             this.Name = "wsd_form";
             this.Text = "FFXI Weaponskill Damage Calculator";
@@ -1864,6 +1886,8 @@
             this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox_ma.ResumeLayout(false);
+            this.groupBox_ma.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1871,6 +1895,16 @@
 
         #endregion
 
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem valuesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem averageIterationsToolStripMenuItem;
         internal System.Windows.Forms.Button b_Calc;
         internal System.Windows.Forms.TextBox b_STR;
         internal System.Windows.Forms.TextBox b_WSD;
@@ -1980,11 +2014,6 @@
         internal System.Windows.Forms.CheckBox cb_MS;
         internal System.Windows.Forms.TextBox b_pdif;
         internal System.Windows.Forms.Label label48;
-        internal System.Windows.Forms.ToolTip toolTip_pdif;
-        internal System.Windows.Forms.ToolTip toolTip_weatherbonus;
-        internal System.Windows.Forms.ToolTip toolTip_Affi;
-        internal System.Windows.Forms.ToolTip toolTip_rank;
-        internal System.Windows.Forms.ToolTip toolTip_Ambu;
         internal System.Windows.Forms.ComboBox cb_Obi;
         internal System.Windows.Forms.TextBox tb_RAMaccSkill;
         internal System.Windows.Forms.Label label50;
@@ -1993,11 +2022,6 @@
         internal System.Windows.Forms.GroupBox groupBox_dmg;
         internal System.Windows.Forms.ToolTip toolTip_damage;
         internal System.Windows.Forms.GroupBox groupBox1;
-        internal System.Windows.Forms.MenuStrip menuStrip1;
-        internal System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        internal System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        internal System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        internal System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         internal System.Windows.Forms.Label label_carry;
         internal System.Windows.Forms.Label label_Crits;
         internal System.Windows.Forms.NumericUpDown num_clim;
@@ -2007,26 +2031,28 @@
         internal System.Windows.Forms.Label label52;
         internal System.Windows.Forms.CheckBox cb_tern;
         internal System.Windows.Forms.Label label53;
-        private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ComboBox combo_wcats;
+        internal System.Windows.Forms.ComboBox combo_wcats;
         internal System.Windows.Forms.TextBox tb_KAD;
         internal System.Windows.Forms.Label label55;
-        private System.Windows.Forms.GroupBox gpb_mob;
+        internal System.Windows.Forms.GroupBox gpb_mob;
         internal System.Windows.Forms.CheckBox cb_footw;
         internal System.Windows.Forms.Label label56;
-        private System.Windows.Forms.ComboBox cb_MJob;
-        private System.Windows.Forms.ComboBox cb_SJob;
-        private System.Windows.Forms.Label label47;
+        internal System.Windows.Forms.ComboBox cb_MJob;
+        internal System.Windows.Forms.ComboBox cb_SJob;
+        internal System.Windows.Forms.Label label47;
         internal System.Windows.Forms.CheckBox cb_building;
         internal System.Windows.Forms.Label label49;
-        private System.Windows.Forms.ToolStripMenuItem valuesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem averageIterationsToolStripMenuItem;
-        private System.Windows.Forms.Label label_iterations;
+        internal System.Windows.Forms.Label label_iterations;
         internal System.Windows.Forms.CheckBox cb_Utu;
-        private System.Windows.Forms.CheckBox b_fencer;
+        internal System.Windows.Forms.CheckBox b_fencer;
         internal System.Windows.Forms.CheckBox cb_Crepes;
+        private System.Windows.Forms.ToolTip toolTip_pdif;
+        private System.Windows.Forms.ToolTip toolTip_weatherbonus;
+        private System.Windows.Forms.ToolTip toolTip_Affi;
+        private System.Windows.Forms.ToolTip toolTip_rank;
+        private System.Windows.Forms.ToolTip toolTip_Ambu;
+        private System.Windows.Forms.Label label_ma_notes;
+        private System.Windows.Forms.GroupBox groupBox_ma;
     }
 }
 
