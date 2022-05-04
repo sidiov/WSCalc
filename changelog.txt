@@ -1,3 +1,4 @@
+v1.6.0 - Refactored and open sourced, stuff may be broken now, but basic testing was ok.
 v1.5.6 - Fixed some calculation bugs, added Crepuscular knife 
 v1.5.5 - Added fencer checkbox if using shield, and fencer trait bonuses.  Fixed a bug in accuracy that made hitrate far too high.
 v1.5.4 - Added Utu Grip, fixed a bug with orpheus belt in hybrid ws, and now display the orpheus bonus in GUI
