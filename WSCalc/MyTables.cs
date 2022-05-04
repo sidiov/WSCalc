@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WSCalc
 {
-    internal class MyTables
+    internal static class MyTables
     {
         public static DataTable _jobs()
         {
@@ -261,5 +261,6 @@ namespace WSCalc
 
             return table1;
         }
+
     }
 }
