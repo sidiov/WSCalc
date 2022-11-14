@@ -183,6 +183,8 @@ namespace WSCalc
             double drgwsd = 0.0;
             if (cb_MJob.Text == "DRG")
             { drgwsd = 0.21; }
+            else if (cb_SJob.Text == "DRG" && num_ML.Value >= 5)
+            { drgwsd = 0.10; }
             else if (cb_SJob.Text == "DRG")
             { drgwsd = 0.07; }
 
@@ -373,9 +375,12 @@ namespace WSCalc
                 wsd += 0.2;
             }
 
+
             double drgwsd = 0.0;
             if (cb_MJob.Text == "DRG")
             { drgwsd = 0.21; }
+            else if (cb_SJob.Text == "DRG" && num_ML.Value >= 5)
+            { drgwsd = 0.10; }
             else if (cb_SJob.Text == "DRG")
             { drgwsd = 0.07; }
 
@@ -393,7 +398,7 @@ namespace WSCalc
 
             int hits = MyFunc.getrow_int(dt_p, combo_WS.Text, "Hits");
 
-            hits = hits + MyFunc.amImulti((Convert.ToDouble(b_da.Text)), (Convert.ToDouble(b_ta.Text)), (Convert.ToDouble(b_qa.Text)), cb_MJob.Text, cb_SJob.Text);
+            hits = hits + MyFunc.amImulti((Convert.ToDouble(b_da.Text)), (Convert.ToDouble(b_ta.Text)), (Convert.ToDouble(b_qa.Text)), cb_MJob.Text, cb_SJob.Text, Convert.ToInt32(num_ML.Value));
             if (hits > 8)
             {
                 hits = 8;
@@ -601,7 +606,7 @@ namespace WSCalc
                 int offhits = 1;
                 if (offhits + hits < 8)
                 {
-                    offhits = 1 + MyFunc.amImulti((Convert.ToDouble(b_da.Text)), (Convert.ToDouble(b_ta.Text)), (Convert.ToDouble(b_qa.Text)), cb_MJob.Text, cb_SJob.Text);
+                    offhits = 1 + MyFunc.amImulti((Convert.ToDouble(b_da.Text)), (Convert.ToDouble(b_ta.Text)), (Convert.ToDouble(b_qa.Text)), cb_MJob.Text, cb_SJob.Text, Convert.ToInt32(num_ML.Value));
                     if (offhits + hits > 8)
                     {
                         offhits = 8 - hits;
@@ -756,9 +761,12 @@ namespace WSCalc
             double ambu = Double.Parse(b_Ambu.Text) / 100;
             double ranks = Double.Parse(b_Ranks.Text) / 100;
 
+
             double drgwsd = 0.0;
             if (cb_MJob.Text == "DRG")
             { drgwsd = 0.21; }
+            else if (cb_SJob.Text == "DRG" && num_ML.Value >= 5)
+            { drgwsd = 0.10; }
             else if (cb_SJob.Text == "DRG")
             { drgwsd = 0.07; }
 
@@ -780,7 +788,7 @@ namespace WSCalc
             double damage = 0;
 
             int hits = MyFunc.getrow_int(dt_p, combo_WS.Text, "Hits");
-            hits = hits + MyFunc.amImulti((Convert.ToDouble(b_da.Text)), (Convert.ToDouble(b_ta.Text)), (Convert.ToDouble(b_qa.Text)), cb_MJob.Text, cb_SJob.Text);
+            hits = hits + MyFunc.amImulti((Convert.ToDouble(b_da.Text)), (Convert.ToDouble(b_ta.Text)), (Convert.ToDouble(b_qa.Text)), cb_MJob.Text, cb_SJob.Text, Convert.ToInt32(num_ML.Value));
             if (hits > 8)
             {
                 hits = 8;
@@ -952,6 +960,15 @@ namespace WSCalc
             double pdl = MyFunc.getrow_double(dt_j, cb_MJob.Text, "PDL");
             double pdls = MyFunc.getrow_double(dt_j, cb_SJob.Text, "PDL_s");
 
+            if (cb_SJob.Text == "DRK" && num_ML.Value >= 5)
+            {
+                pdls = 0.3;
+            }
+            else if ((cb_SJob.Text == "THF" || cb_SJob.Text == "NIN") && num_ML.Value >= 5)
+            {
+                pdls = 0.1;
+            }
+
             if (pdl != 0 || pdls != 0 || Convert.ToInt32(b_pdif.Text) != 0)
             {
                 if (pdl != 0)
@@ -1035,12 +1052,20 @@ namespace WSCalc
         {
             double tatk = Double.Parse(b_ATTK.Text);
             double atkpenalty = 0.0;
+            //WS & Defense bonus/penalties
+            double ttdef = Double.Parse(b_target_def.Text);
+            //defdown vars
+            double ddown, a0, a2, m, tps, rem = 0.0;
 
 
             //Smite
             if (htype == 0 || htype == 8 || htype == 9)
             {
                 double smite = MyFunc.getrow_double(dt_j, cb_MJob.Text, "Smite");
+                if (cb_SJob.Text == "DRK" && num_ML.Value >= 5 )
+                {
+                    smite = 19.9;
+                }
                 if (smite == 0)
                 {
                     smite = MyFunc.getrow_double(dt_j, cb_SJob.Text, "Smite_s");
@@ -1054,98 +1079,96 @@ namespace WSCalc
             {
                 tatk = Math.Floor(tatk * 1.25);
             }
+            
 
-            //WS bonus/penalties
-            if (wsname == "Tachi: Shoha" || wsname == "Blade: Kamu")
+            switch (wsname)
             {
-                tatk = tatk * 1.35;
-            }
-            else if (wsname == "Howling Fist" || wsname == "Retribution")
-            {
-                tatk = tatk * 1.5;
-            }
-            else if ((wsname == "Dragon Kick" || wsname == "Tornado Kick") && cb_footw.Checked)
-            {
-                tatk = tatk * 1.0976;
-            }
-            else if (wsname == "Shijin Spiral")
-            {
-                tatk = tatk * 1.05;
-            }
-            else if (wsname == "Ascetic's Fury" || wsname == "Viper Bite")
-            {
-                tatk = tatk * 2.0;
-            }
-            else if (wsname == "Mandalic Stab")
-            {
-                tatk = tatk * 1.75;
-            }
-            else if (wsname == "Drakesbane")
-            {
-                tatk = tatk * 0.8125;
-            }
-            else if (wsname == "Blade: Shun" && tp > 1000)
-            {
-                tatk = tatk * (0 + (tp / 1000));
-            }
-            else if (wsname == "Requiescat" && tp > 1000 && tp < 2999)
-            {
-                atkpenalty = tatk / (0.0 - ((tp - 1000) / 100));
-            }
-            else if (wsname == "Requiescat" && tp == 1000)
-            {
-                atkpenalty = tatk * (0 - 0.2);
-            }
+                case "Tachi: Shoha":
+                case "Blade: Kamu":
+                    tatk = tatk * 1.35;
+                    break;
+                case "Howling Fist":
+                case "Retribution":
+                    tatk = tatk * 1.5;
+                    break;
+                case "Dragon Kick":
+                case "Tornado Kick":
+                    tatk = tatk * 1.0976;
+                    break;
+                case "Shijin Spiral":
+                    tatk = tatk * 1.05;
+                    break;
+                case "Ascetic's Fury":
+                case "Viper Bite":
+                    tatk = tatk * 2.0;
+                    break;
+                case "Mandalic Stab":
+                    tatk = tatk * 1.75;
+                    break;
+                case "Drakesbane":
+                    tatk = tatk * 0.8125;
+                    break;
+                case "Blade: Shun":
+                    tatk = tatk * (0 + (tp / 1000));
+                    break;
+                case "Requiescat":
+                    if (tp > 1000 && tp < 2999)
+                    {
+                        atkpenalty = tatk / (0.0 - ((tp - 1000) / 100));
+                    }
+                    else if (tp == 1000)
+                    {
+                        atkpenalty = tatk * (0 - 0.2);
+                    }
+                    break;
+                case "Camlann's Torment":
+                    ddown = 0.0;
+                    a0 = 12.5;
+                    a2 = 62.5;
+                    m = (a0 - a2) / (1000 - 3000);
 
-            //Defense Bonus/ Penalties
-            double ttdef = Double.Parse(b_target_def.Text);
+                    tps = tp - 1000;
 
-            if (wsname == "Camlann's Torment")
-            {
-                double ddown = 0.0;
-                double a0 = 12.5;
-                double a2 = 62.5;
-                double m = (a0 - a2) / (1000 - 3000);
+                    if (tps == 0)
+                    {
+                        ddown = a0;
+                    }
+                    else //y = mx + b
+                    {
+                        ddown = m * tps + a0;
+                    }
 
-                double tps = tp - 1000;
+                    rem = Math.Floor(ttdef * (ddown / 100));
 
-                if (tps == 0)
-                {
-                    ddown = a0;
-                }
-                else //y = mx + b
-                {
-                    ddown = m * tps + a0;
-                }
+                    ttdef = ttdef - rem;
 
-                double rem = Math.Floor(ttdef * (ddown / 100));
+                    break;
+                case "Quietus":
+                    ddown = 0.0;
+                    a0 = 10.0;
+                    a2 = 50.0;
+                    m = (a0 - a2) / (1000 - 3000);
 
-                ttdef = ttdef - rem;
+                    tps = tp - 1000;
 
+                    if (tps == 0)
+                    {
+                        ddown = a0;
+                    }
+                    else //y = mx + b
+                    {
+                        ddown = m * tps + a0;
+                    }
+
+                    rem = Math.Floor(ttdef * (ddown / 100));
+
+                    ttdef = ttdef - rem;
+
+                    break;
+                default:
+                    break;
             }
-            else if (wsname == "Quietus")
-            {
-                double ddown = 0.0;
-                double a0 = 10.0;
-                double a2 = 50.0;
-                double m = (a0 - a2) / (1000 - 3000);
-
-                double tps = tp - 1000;
-
-                if (tps == 0)
-                {
-                    ddown = a0;
-                }
-                else //y = mx + b
-                {
-                    ddown = m * tps + a0;
-                }
-
-                double rem = Math.Floor(ttdef * (ddown / 100));
-
-                ttdef = ttdef - rem;
-
-            }
+            
 
             //floor after bonuses
             tatk = Math.Floor(tatk);
@@ -1254,6 +1277,16 @@ namespace WSCalc
 
             double pdl = MyFunc.getrow_double(dt_j, cb_MJob.Text, "PDL");
             double pdls = MyFunc.getrow_double(dt_j, cb_SJob.Text, "PDL_s");
+
+
+            if (cb_SJob.Text == "DRK" && num_ML.Value >= 5)
+            {
+                pdls = 0.3;
+            }
+            else if ((cb_SJob.Text == "THF" || cb_SJob.Text == "NIN") && num_ML.Value >= 5)
+            {
+                pdls = 0.1;
+            }
 
             if (pdl != 0 || pdls != 0 || Convert.ToInt32(b_pdif.Text) != 0)
             {

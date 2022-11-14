@@ -188,6 +188,8 @@
             this.cb_Crepes = new System.Windows.Forms.CheckBox();
             this.label_ma_notes = new System.Windows.Forms.Label();
             this.groupBox_ma = new System.Windows.Forms.GroupBox();
+            this.num_ML = new System.Windows.Forms.NumericUpDown();
+            this.label54 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.b_ftp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.track_orph)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_clim)).BeginInit();
@@ -196,6 +198,7 @@
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox_ma.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_ML)).BeginInit();
             this.SuspendLayout();
             // 
             // b_Calc
@@ -213,7 +216,7 @@
             this.b_STR.Location = new System.Drawing.Point(66, 115);
             this.b_STR.Name = "b_STR";
             this.b_STR.Size = new System.Drawing.Size(35, 20);
-            this.b_STR.TabIndex = 7;
+            this.b_STR.TabIndex = 10;
             this.b_STR.Text = "300";
             this.b_STR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_STR_KeyPress);
             // 
@@ -222,7 +225,7 @@
             this.b_WSD.Location = new System.Drawing.Point(70, 374);
             this.b_WSD.Name = "b_WSD";
             this.b_WSD.Size = new System.Drawing.Size(34, 20);
-            this.b_WSD.TabIndex = 26;
+            this.b_WSD.TabIndex = 35;
             this.b_WSD.Text = "10";
             this.b_WSD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_WSD_KeyPress);
             // 
@@ -257,7 +260,7 @@
             this.b_VIT.Location = new System.Drawing.Point(66, 141);
             this.b_VIT.Name = "b_VIT";
             this.b_VIT.Size = new System.Drawing.Size(35, 20);
-            this.b_VIT.TabIndex = 8;
+            this.b_VIT.TabIndex = 11;
             this.b_VIT.Text = "150";
             this.b_VIT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_VIT_KeyPress);
             // 
@@ -275,7 +278,7 @@
             this.b_INT.Location = new System.Drawing.Point(66, 195);
             this.b_INT.Name = "b_INT";
             this.b_INT.Size = new System.Drawing.Size(35, 20);
-            this.b_INT.TabIndex = 10;
+            this.b_INT.TabIndex = 13;
             this.b_INT.Text = "100";
             this.b_INT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_INT_KeyPress);
             // 
@@ -293,7 +296,7 @@
             this.b_DEX.Location = new System.Drawing.Point(66, 221);
             this.b_DEX.Name = "b_DEX";
             this.b_DEX.Size = new System.Drawing.Size(35, 20);
-            this.b_DEX.TabIndex = 11;
+            this.b_DEX.TabIndex = 14;
             this.b_DEX.Text = "250";
             this.b_DEX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_DEX_KeyPress);
             // 
@@ -311,7 +314,7 @@
             this.b_MND.Location = new System.Drawing.Point(66, 247);
             this.b_MND.Name = "b_MND";
             this.b_MND.Size = new System.Drawing.Size(34, 20);
-            this.b_MND.TabIndex = 12;
+            this.b_MND.TabIndex = 15;
             this.b_MND.Text = "100";
             this.b_MND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_MND_KeyPress);
             // 
@@ -329,7 +332,7 @@
             this.b_CHR.Location = new System.Drawing.Point(66, 274);
             this.b_CHR.Name = "b_CHR";
             this.b_CHR.Size = new System.Drawing.Size(34, 20);
-            this.b_CHR.TabIndex = 13;
+            this.b_CHR.TabIndex = 16;
             this.b_CHR.Text = "100";
             this.b_CHR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_CHR_KeyPress);
             // 
@@ -351,7 +354,7 @@
             this.combo_WS.MaxDropDownItems = 12;
             this.combo_WS.Name = "combo_WS";
             this.combo_WS.Size = new System.Drawing.Size(174, 21);
-            this.combo_WS.TabIndex = 146;
+            this.combo_WS.TabIndex = 96;
             this.combo_WS.SelectedIndexChanged += new System.EventHandler(this.combo_WS_SelectedIndexChanged);
             // 
             // label7
@@ -368,7 +371,7 @@
             this.b_ATTK.Location = new System.Drawing.Point(61, 57);
             this.b_ATTK.Name = "b_ATTK";
             this.b_ATTK.Size = new System.Drawing.Size(35, 20);
-            this.b_ATTK.TabIndex = 3;
+            this.b_ATTK.TabIndex = 4;
             this.b_ATTK.Text = "2000";
             this.b_ATTK.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_ATTK_KeyPress);
             // 
@@ -395,7 +398,7 @@
             this.b_target_def.Location = new System.Drawing.Point(454, 540);
             this.b_target_def.Name = "b_target_def";
             this.b_target_def.Size = new System.Drawing.Size(35, 20);
-            this.b_target_def.TabIndex = 105;
+            this.b_target_def.TabIndex = 125;
             this.b_target_def.Text = "500";
             this.b_target_def.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_target_def_KeyPress);
             // 
@@ -404,7 +407,7 @@
             this.b_DMG1.Location = new System.Drawing.Point(70, 465);
             this.b_DMG1.Name = "b_DMG1";
             this.b_DMG1.Size = new System.Drawing.Size(35, 20);
-            this.b_DMG1.TabIndex = 81;
+            this.b_DMG1.TabIndex = 45;
             this.b_DMG1.Text = "284";
             this.b_DMG1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_DMG_KeyPress);
             // 
@@ -422,7 +425,7 @@
             this.b_target_VIT.Location = new System.Drawing.Point(563, 515);
             this.b_target_VIT.Name = "b_target_VIT";
             this.b_target_VIT.Size = new System.Drawing.Size(35, 20);
-            this.b_target_VIT.TabIndex = 108;
+            this.b_target_VIT.TabIndex = 128;
             this.b_target_VIT.Text = "200";
             this.b_target_VIT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_target_VIT_KeyPress);
             // 
@@ -449,7 +452,7 @@
             this.b_TP.Location = new System.Drawing.Point(334, 134);
             this.b_TP.Name = "b_TP";
             this.b_TP.Size = new System.Drawing.Size(34, 20);
-            this.b_TP.TabIndex = 46;
+            this.b_TP.TabIndex = 70;
             this.b_TP.Text = "0";
             this.toolTip_weatherbonus.SetToolTip(this.b_TP, "Do not add fencer trait bonuses.  Use fencer checkbox and jobs.\\nYou will still n" +
         "eed to add the bonuses from any fencer+1 gear.");
@@ -478,7 +481,7 @@
             this.b_target_INT.Location = new System.Drawing.Point(563, 489);
             this.b_target_INT.Name = "b_target_INT";
             this.b_target_INT.Size = new System.Drawing.Size(35, 20);
-            this.b_target_INT.TabIndex = 107;
+            this.b_target_INT.TabIndex = 127;
             this.b_target_INT.Text = "200";
             // 
             // label15
@@ -507,7 +510,7 @@
             this.b_MAB.Location = new System.Drawing.Point(333, 217);
             this.b_MAB.Name = "b_MAB";
             this.b_MAB.Size = new System.Drawing.Size(35, 20);
-            this.b_MAB.TabIndex = 49;
+            this.b_MAB.TabIndex = 76;
             this.b_MAB.Text = "150";
             this.b_MAB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_MAB_KeyPress);
             // 
@@ -525,7 +528,7 @@
             this.b_target_MDB.Location = new System.Drawing.Point(454, 515);
             this.b_target_MDB.Name = "b_target_MDB";
             this.b_target_MDB.Size = new System.Drawing.Size(35, 20);
-            this.b_target_MDB.TabIndex = 104;
+            this.b_target_MDB.TabIndex = 124;
             this.b_target_MDB.Text = "20";
             this.b_target_MDB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_target_MDB_KeyPress);
             // 
@@ -543,7 +546,7 @@
             this.b_AGI.Location = new System.Drawing.Point(66, 167);
             this.b_AGI.Name = "b_AGI";
             this.b_AGI.Size = new System.Drawing.Size(35, 20);
-            this.b_AGI.TabIndex = 9;
+            this.b_AGI.TabIndex = 12;
             this.b_AGI.Text = "200";
             this.b_AGI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_AGI_KeyPress);
             // 
@@ -561,7 +564,7 @@
             this.b_DMG2.Location = new System.Drawing.Point(70, 490);
             this.b_DMG2.Name = "b_DMG2";
             this.b_DMG2.Size = new System.Drawing.Size(35, 20);
-            this.b_DMG2.TabIndex = 82;
+            this.b_DMG2.TabIndex = 46;
             this.b_DMG2.Text = "0";
             // 
             // label19
@@ -578,7 +581,7 @@
             this.b_DMGr.Location = new System.Drawing.Point(70, 530);
             this.b_DMGr.Name = "b_DMGr";
             this.b_DMGr.Size = new System.Drawing.Size(35, 20);
-            this.b_DMGr.TabIndex = 83;
+            this.b_DMGr.TabIndex = 50;
             this.b_DMGr.Text = "101";
             // 
             // label21
@@ -595,7 +598,7 @@
             this.b_DMGa.Location = new System.Drawing.Point(70, 556);
             this.b_DMGa.Name = "b_DMGa";
             this.b_DMGa.Size = new System.Drawing.Size(35, 20);
-            this.b_DMGa.TabIndex = 84;
+            this.b_DMGa.TabIndex = 51;
             this.b_DMGa.Text = "300";
             // 
             // label22
@@ -612,7 +615,7 @@
             this.b_Affi.Location = new System.Drawing.Point(333, 305);
             this.b_Affi.Name = "b_Affi";
             this.b_Affi.Size = new System.Drawing.Size(35, 20);
-            this.b_Affi.TabIndex = 54;
+            this.b_Affi.TabIndex = 81;
             this.b_Affi.Text = "0";
             this.toolTip_Affi.SetToolTip(this.b_Affi, "% bonus from Affinity.  ie. Pixie Hairpin+1 gives 28%");
             this.b_Affi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_Affi_KeyPress);
@@ -736,7 +739,7 @@
             0});
             this.b_ftp.Name = "b_ftp";
             this.b_ftp.Size = new System.Drawing.Size(34, 20);
-            this.b_ftp.TabIndex = 47;
+            this.b_ftp.TabIndex = 71;
             // 
             // label26
             // 
@@ -754,7 +757,7 @@
             this.b_Ranks.Location = new System.Drawing.Point(284, 519);
             this.b_Ranks.Name = "b_Ranks";
             this.b_Ranks.Size = new System.Drawing.Size(35, 20);
-            this.b_Ranks.TabIndex = 94;
+            this.b_Ranks.TabIndex = 58;
             this.b_Ranks.Text = "0";
             this.toolTip_rank.SetToolTip(this.b_Ranks, "% WS damage bonus from Ranked REMA. ");
             this.b_Ranks.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_Myth_KeyPress);
@@ -765,7 +768,7 @@
             this.cb_myth.Location = new System.Drawing.Point(237, 476);
             this.cb_myth.Name = "cb_myth";
             this.cb_myth.Size = new System.Drawing.Size(63, 17);
-            this.cb_myth.TabIndex = 92;
+            this.cb_myth.TabIndex = 56;
             this.cb_myth.Text = "Mythic?";
             this.cb_myth.UseVisualStyleBackColor = true;
             this.cb_myth.CheckedChanged += new System.EventHandler(this.cb_myth_CheckedChanged);
@@ -773,7 +776,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(129, 118);
+            this.label31.Location = new System.Drawing.Point(126, 118);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(48, 13);
             this.label31.TabIndex = 72;
@@ -785,7 +788,7 @@
             this.b_crate.Location = new System.Drawing.Point(180, 115);
             this.b_crate.Name = "b_crate";
             this.b_crate.Size = new System.Drawing.Size(35, 20);
-            this.b_crate.TabIndex = 14;
+            this.b_crate.TabIndex = 20;
             this.b_crate.Text = "5";
             this.toolTip_Ambu.SetToolTip(this.b_crate, "Include Merits level. Do not include fencer trait, but include any bonuses from f" +
         "encer+ gear.");
@@ -796,14 +799,14 @@
             this.b_cdmg.Location = new System.Drawing.Point(180, 138);
             this.b_cdmg.Name = "b_cdmg";
             this.b_cdmg.Size = new System.Drawing.Size(35, 20);
-            this.b_cdmg.TabIndex = 15;
+            this.b_cdmg.TabIndex = 21;
             this.b_cdmg.Text = "0";
             this.b_cdmg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_cdmg_KeyPress);
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(130, 141);
+            this.label32.Location = new System.Drawing.Point(126, 140);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(50, 13);
             this.label32.TabIndex = 75;
@@ -824,7 +827,7 @@
             this.cb_SATA.Location = new System.Drawing.Point(247, 30);
             this.cb_SATA.Name = "cb_SATA";
             this.cb_SATA.Size = new System.Drawing.Size(110, 17);
-            this.cb_SATA.TabIndex = 35;
+            this.cb_SATA.TabIndex = 60;
             this.cb_SATA.Text = "Sneak/Trick ATK";
             this.cb_SATA.UseVisualStyleBackColor = true;
             // 
@@ -833,7 +836,7 @@
             this.b_target_MND.Location = new System.Drawing.Point(563, 540);
             this.b_target_MND.Name = "b_target_MND";
             this.b_target_MND.Size = new System.Drawing.Size(35, 20);
-            this.b_target_MND.TabIndex = 109;
+            this.b_target_MND.TabIndex = 129;
             this.b_target_MND.Text = "200";
             this.b_target_MND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_target_MND_KeyPress);
             // 
@@ -851,7 +854,7 @@
             this.b_Ambu.Location = new System.Drawing.Point(284, 553);
             this.b_Ambu.Name = "b_Ambu";
             this.b_Ambu.Size = new System.Drawing.Size(35, 20);
-            this.b_Ambu.TabIndex = 95;
+            this.b_Ambu.TabIndex = 59;
             this.b_Ambu.Text = "0";
             this.toolTip_Ambu.SetToolTip(this.b_Ambu, "% WS damage bonus from Shiny Ambu weapons.\nThis applies to any ambu WS, so make s" +
         "ure you add/remove it as necessary.");
@@ -893,7 +896,7 @@
             this.cb_relic.Location = new System.Drawing.Point(237, 458);
             this.cb_relic.Name = "cb_relic";
             this.cb_relic.Size = new System.Drawing.Size(56, 17);
-            this.cb_relic.TabIndex = 91;
+            this.cb_relic.TabIndex = 55;
             this.cb_relic.Text = "Relic?";
             this.cb_relic.UseVisualStyleBackColor = true;
             this.cb_relic.CheckedChanged += new System.EventHandler(this.cb_relic_CheckedChanged);
@@ -903,7 +906,7 @@
             this.b_da.Location = new System.Drawing.Point(59, 38);
             this.b_da.Name = "b_da";
             this.b_da.Size = new System.Drawing.Size(35, 20);
-            this.b_da.TabIndex = 28;
+            this.b_da.TabIndex = 40;
             this.b_da.Text = "10";
             this.toolTip_Ambu.SetToolTip(this.b_da, "Do not include Job Traits, except for BLU");
             // 
@@ -912,7 +915,7 @@
             this.b_ta.Location = new System.Drawing.Point(59, 64);
             this.b_ta.Name = "b_ta";
             this.b_ta.Size = new System.Drawing.Size(35, 20);
-            this.b_ta.TabIndex = 29;
+            this.b_ta.TabIndex = 41;
             this.b_ta.Text = "0";
             this.toolTip_Ambu.SetToolTip(this.b_ta, "Do not include Job Traits, except for BLU");
             // 
@@ -921,7 +924,7 @@
             this.b_qa.Location = new System.Drawing.Point(59, 89);
             this.b_qa.Name = "b_qa";
             this.b_qa.Size = new System.Drawing.Size(34, 20);
-            this.b_qa.TabIndex = 30;
+            this.b_qa.TabIndex = 42;
             this.b_qa.Text = "0";
             this.toolTip_Ambu.SetToolTip(this.b_qa, "Do not include Job Traits, except for BLU");
             // 
@@ -966,7 +969,7 @@
             this.b_mdmg.Location = new System.Drawing.Point(333, 193);
             this.b_mdmg.Name = "b_mdmg";
             this.b_mdmg.Size = new System.Drawing.Size(35, 20);
-            this.b_mdmg.TabIndex = 48;
+            this.b_mdmg.TabIndex = 75;
             this.b_mdmg.Text = "420";
             this.b_mdmg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_mdmg_KeyPress);
             // 
@@ -985,7 +988,7 @@
             this.b_ratt.Location = new System.Drawing.Point(61, 83);
             this.b_ratt.Name = "b_ratt";
             this.b_ratt.Size = new System.Drawing.Size(35, 20);
-            this.b_ratt.TabIndex = 5;
+            this.b_ratt.TabIndex = 6;
             this.b_ratt.Text = "1500";
             // 
             // b_acc
@@ -993,7 +996,7 @@
             this.b_acc.Location = new System.Drawing.Point(161, 54);
             this.b_acc.Name = "b_acc";
             this.b_acc.Size = new System.Drawing.Size(35, 20);
-            this.b_acc.TabIndex = 4;
+            this.b_acc.TabIndex = 5;
             this.b_acc.Text = "1400";
             this.b_acc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_acc_KeyPress);
             // 
@@ -1011,7 +1014,7 @@
             this.b_racc.Location = new System.Drawing.Point(161, 82);
             this.b_racc.Name = "b_racc";
             this.b_racc.Size = new System.Drawing.Size(35, 20);
-            this.b_racc.TabIndex = 6;
+            this.b_racc.TabIndex = 7;
             this.b_racc.Text = "1400";
             this.b_racc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_racc_KeyPress);
             // 
@@ -1033,7 +1036,7 @@
             this.cb_Mobs.Location = new System.Drawing.Point(415, 435);
             this.cb_Mobs.Name = "cb_Mobs";
             this.cb_Mobs.Size = new System.Drawing.Size(144, 21);
-            this.cb_Mobs.TabIndex = 101;
+            this.cb_Mobs.TabIndex = 120;
             this.cb_Mobs.SelectedIndexChanged += new System.EventHandler(this.cb_Mobs_SelectedIndexChanged);
             // 
             // label20
@@ -1051,7 +1054,7 @@
             this.cb_mytham3.Location = new System.Drawing.Point(237, 494);
             this.cb_mytham3.Name = "cb_mytham3";
             this.cb_mytham3.Size = new System.Drawing.Size(82, 17);
-            this.cb_mytham3.TabIndex = 93;
+            this.cb_mytham3.TabIndex = 57;
             this.cb_mytham3.Text = "Mythic AM3";
             this.cb_mytham3.UseVisualStyleBackColor = true;
             // 
@@ -1063,7 +1066,7 @@
             this.track_orph.Minimum = 19;
             this.track_orph.Name = "track_orph";
             this.track_orph.Size = new System.Drawing.Size(104, 45);
-            this.track_orph.TabIndex = 60;
+            this.track_orph.TabIndex = 83;
             this.track_orph.Value = 70;
             this.track_orph.ValueChanged += new System.EventHandler(this.track_orph_ValueChanged);
             // 
@@ -1073,7 +1076,7 @@
             this.cb_orph.Location = new System.Drawing.Point(271, 351);
             this.cb_orph.Name = "cb_orph";
             this.cb_orph.Size = new System.Drawing.Size(66, 17);
-            this.cb_orph.TabIndex = 55;
+            this.cb_orph.TabIndex = 82;
             this.cb_orph.Text = "Orpheus";
             this.cb_orph.UseVisualStyleBackColor = true;
             // 
@@ -1092,7 +1095,7 @@
             this.cb_shining.Location = new System.Drawing.Point(247, 50);
             this.cb_shining.Name = "cb_shining";
             this.cb_shining.Size = new System.Drawing.Size(90, 17);
-            this.cb_shining.TabIndex = 36;
+            this.cb_shining.TabIndex = 61;
             this.cb_shining.Text = "Shining One?";
             this.cb_shining.UseVisualStyleBackColor = true;
             // 
@@ -1101,7 +1104,7 @@
             this.b_target_eva.Location = new System.Drawing.Point(454, 462);
             this.b_target_eva.Name = "b_target_eva";
             this.b_target_eva.Size = new System.Drawing.Size(35, 20);
-            this.b_target_eva.TabIndex = 102;
+            this.b_target_eva.TabIndex = 122;
             this.b_target_eva.Text = "500";
             // 
             // label42
@@ -1118,7 +1121,7 @@
             this.tb_maccSkill.Location = new System.Drawing.Point(173, 465);
             this.tb_maccSkill.Name = "tb_maccSkill";
             this.tb_maccSkill.Size = new System.Drawing.Size(35, 20);
-            this.tb_maccSkill.TabIndex = 85;
+            this.tb_maccSkill.TabIndex = 47;
             this.tb_maccSkill.Text = "215";
             this.tb_maccSkill.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_maccSkill_KeyPress);
             // 
@@ -1137,7 +1140,7 @@
             this.b_macc.Location = new System.Drawing.Point(333, 243);
             this.b_macc.Name = "b_macc";
             this.b_macc.Size = new System.Drawing.Size(35, 20);
-            this.b_macc.TabIndex = 50;
+            this.b_macc.TabIndex = 77;
             this.b_macc.Text = "150";
             this.toolTip_Ambu.SetToolTip(this.b_macc, "Do not include \'Magic Accuracy Skill\' from weapons");
             this.b_macc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_macc_KeyPress);
@@ -1157,7 +1160,7 @@
             this.b_target_AGI.Location = new System.Drawing.Point(563, 463);
             this.b_target_AGI.Name = "b_target_AGI";
             this.b_target_AGI.Size = new System.Drawing.Size(35, 20);
-            this.b_target_AGI.TabIndex = 106;
+            this.b_target_AGI.TabIndex = 126;
             this.b_target_AGI.Text = "200";
             this.b_target_AGI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_target_DEX_KeyPress);
             // 
@@ -1175,7 +1178,7 @@
             this.b_target_meva.Location = new System.Drawing.Point(454, 489);
             this.b_target_meva.Name = "b_target_meva";
             this.b_target_meva.Size = new System.Drawing.Size(35, 20);
-            this.b_target_meva.TabIndex = 103;
+            this.b_target_meva.TabIndex = 123;
             this.b_target_meva.Text = "100";
             this.b_target_meva.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
@@ -1195,7 +1198,7 @@
             this.cb_MS.Location = new System.Drawing.Point(247, 69);
             this.cb_MS.Name = "cb_MS";
             this.cb_MS.Size = new System.Drawing.Size(92, 17);
-            this.cb_MS.TabIndex = 37;
+            this.cb_MS.TabIndex = 62;
             this.cb_MS.Text = "Mighty Strikes";
             this.cb_MS.UseVisualStyleBackColor = true;
             // 
@@ -1204,7 +1207,7 @@
             this.b_pdif.Location = new System.Drawing.Point(72, 408);
             this.b_pdif.Name = "b_pdif";
             this.b_pdif.Size = new System.Drawing.Size(34, 20);
-            this.b_pdif.TabIndex = 27;
+            this.b_pdif.TabIndex = 36;
             this.b_pdif.Text = "0";
             this.toolTip_pdif.SetToolTip(this.b_pdif, "% bonus PDL+ from necks/malignance gear");
             this.b_pdif.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.b_pdif_KeyPress);
@@ -1258,7 +1261,7 @@
             this.cb_Obi.Location = new System.Drawing.Point(333, 271);
             this.cb_Obi.Name = "cb_Obi";
             this.cb_Obi.Size = new System.Drawing.Size(39, 21);
-            this.cb_Obi.TabIndex = 51;
+            this.cb_Obi.TabIndex = 80;
             this.toolTip_weatherbonus.SetToolTip(this.cb_Obi, "% bonus from Weather or Day-ie. Belt gives 10% for day, plus 10% for single weath" +
         "er or 25% for double weather.");
             // 
@@ -1311,7 +1314,7 @@
             this.cb_mob_SDT.Location = new System.Drawing.Point(557, 406);
             this.cb_mob_SDT.Name = "cb_mob_SDT";
             this.cb_mob_SDT.Size = new System.Drawing.Size(45, 21);
-            this.cb_mob_SDT.TabIndex = 100;
+            this.cb_mob_SDT.TabIndex = 121;
             this.toolTip_Ambu.SetToolTip(this.cb_mob_SDT, "Special Damage Taken (Elemental)");
             // 
             // label51
@@ -1334,7 +1337,7 @@
             0});
             this.num_clim.Name = "num_clim";
             this.num_clim.Size = new System.Drawing.Size(34, 20);
-            this.num_clim.TabIndex = 16;
+            this.num_clim.TabIndex = 22;
             this.toolTip_Ambu.SetToolTip(this.num_clim, "1=JA, 2=Charis+1, 3=Charis+2, 4=Maculele+1,5=Maculele+2");
             this.num_clim.ValueChanged += new System.EventHandler(this.num_clim_ValueChanged);
             // 
@@ -1359,7 +1362,7 @@
             0});
             this.num_striking.Name = "num_striking";
             this.num_striking.Size = new System.Drawing.Size(34, 20);
-            this.num_striking.TabIndex = 17;
+            this.num_striking.TabIndex = 23;
             this.toolTip_Ambu.SetToolTip(this.num_striking, "1=JA, 2=Charis+1, 3=Charis+2, 4=Maculele+1,5=Maculele+2");
             this.num_striking.ValueChanged += new System.EventHandler(this.num_striking_ValueChanged);
             // 
@@ -1392,7 +1395,7 @@
             this.cb_building.Location = new System.Drawing.Point(181, 247);
             this.cb_building.Name = "cb_building";
             this.cb_building.Size = new System.Drawing.Size(15, 14);
-            this.cb_building.TabIndex = 19;
+            this.cb_building.TabIndex = 25;
             this.toolTip_Ambu.SetToolTip(this.cb_building, "Assumes 3 steps");
             this.cb_building.UseVisualStyleBackColor = true;
             // 
@@ -1412,7 +1415,7 @@
             this.tb_RAMaccSkill.Location = new System.Drawing.Point(170, 82);
             this.tb_RAMaccSkill.Name = "tb_RAMaccSkill";
             this.tb_RAMaccSkill.Size = new System.Drawing.Size(35, 20);
-            this.tb_RAMaccSkill.TabIndex = 87;
+            this.tb_RAMaccSkill.TabIndex = 52;
             this.tb_RAMaccSkill.Text = "0";
             this.tb_RAMaccSkill.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_RAMaccSkill_KeyPress);
             // 
@@ -1473,7 +1476,7 @@
             this.b_fencer.Location = new System.Drawing.Point(112, 44);
             this.b_fencer.Name = "b_fencer";
             this.b_fencer.Size = new System.Drawing.Size(100, 17);
-            this.b_fencer.TabIndex = 86;
+            this.b_fencer.TabIndex = 48;
             this.b_fencer.Text = "Fencer+Shield?";
             this.b_fencer.UseVisualStyleBackColor = true;
             this.b_fencer.CheckedChanged += new System.EventHandler(this.b_fencer_CheckedChanged);
@@ -1591,7 +1594,7 @@
             this.cb_tern.Location = new System.Drawing.Point(181, 222);
             this.cb_tern.Name = "cb_tern";
             this.cb_tern.Size = new System.Drawing.Size(15, 14);
-            this.cb_tern.TabIndex = 18;
+            this.cb_tern.TabIndex = 24;
             this.cb_tern.UseVisualStyleBackColor = true;
             this.cb_tern.CheckedChanged += new System.EventHandler(this.cb_tern_CheckedChanged);
             // 
@@ -1613,7 +1616,7 @@
             this.combo_wcats.Location = new System.Drawing.Point(487, 30);
             this.combo_wcats.Name = "combo_wcats";
             this.combo_wcats.Size = new System.Drawing.Size(104, 21);
-            this.combo_wcats.TabIndex = 145;
+            this.combo_wcats.TabIndex = 95;
             this.combo_wcats.SelectedIndexChanged += new System.EventHandler(this.combo_wcats_SelectedIndexChanged);
             // 
             // tb_KAD
@@ -1621,7 +1624,7 @@
             this.tb_KAD.Location = new System.Drawing.Point(181, 279);
             this.tb_KAD.Name = "tb_KAD";
             this.tb_KAD.Size = new System.Drawing.Size(34, 20);
-            this.tb_KAD.TabIndex = 20;
+            this.tb_KAD.TabIndex = 30;
             this.tb_KAD.Text = "0";
             this.tb_KAD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_KAD_KeyPress);
             // 
@@ -1641,7 +1644,7 @@
             this.cb_footw.Location = new System.Drawing.Point(181, 313);
             this.cb_footw.Name = "cb_footw";
             this.cb_footw.Size = new System.Drawing.Size(15, 14);
-            this.cb_footw.TabIndex = 21;
+            this.cb_footw.TabIndex = 31;
             this.cb_footw.UseVisualStyleBackColor = true;
             // 
             // label56
@@ -1693,7 +1696,7 @@
             this.cb_Utu.Location = new System.Drawing.Point(247, 86);
             this.cb_Utu.Name = "cb_Utu";
             this.cb_Utu.Size = new System.Drawing.Size(71, 17);
-            this.cb_Utu.TabIndex = 38;
+            this.cb_Utu.TabIndex = 63;
             this.cb_Utu.Text = "Utu Grip?";
             this.cb_Utu.UseVisualStyleBackColor = true;
             // 
@@ -1704,7 +1707,7 @@
             this.cb_Crepes.Location = new System.Drawing.Point(247, 104);
             this.cb_Crepes.Name = "cb_Crepes";
             this.cb_Crepes.Size = new System.Drawing.Size(115, 17);
-            this.cb_Crepes.TabIndex = 156;
+            this.cb_Crepes.TabIndex = 64;
             this.cb_Crepes.Text = "Crepuscular Knife?";
             this.cb_Crepes.UseVisualStyleBackColor = true;
             // 
@@ -1731,11 +1734,35 @@
             this.groupBox_ma.TabIndex = 158;
             this.groupBox_ma.TabStop = false;
             // 
+            // num_ML
+            // 
+            this.num_ML.Location = new System.Drawing.Point(175, 26);
+            this.num_ML.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.num_ML.Name = "num_ML";
+            this.num_ML.Size = new System.Drawing.Size(34, 20);
+            this.num_ML.TabIndex = 3;
+            this.toolTip_Ambu.SetToolTip(this.num_ML, "1=JA, 2=Charis+1, 3=Charis+2, 4=Maculele+1,5=Maculele+2");
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(147, 28);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(22, 13);
+            this.label54.TabIndex = 160;
+            this.label54.Text = "ML";
+            // 
             // wsd_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(609, 586);
+            this.Controls.Add(this.label54);
+            this.Controls.Add(this.num_ML);
             this.Controls.Add(this.label_ma_notes);
             this.Controls.Add(this.cb_Crepes);
             this.Controls.Add(this.cb_Utu);
@@ -1888,6 +1915,7 @@
             this.menuStrip1.PerformLayout();
             this.groupBox_ma.ResumeLayout(false);
             this.groupBox_ma.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_ML)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2053,6 +2081,8 @@
         private System.Windows.Forms.ToolTip toolTip_Ambu;
         private System.Windows.Forms.Label label_ma_notes;
         private System.Windows.Forms.GroupBox groupBox_ma;
+        internal System.Windows.Forms.NumericUpDown num_ML;
+        private System.Windows.Forms.Label label54;
     }
 }
 

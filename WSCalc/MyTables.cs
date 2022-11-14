@@ -47,6 +47,8 @@ namespace WSCalc
 
             return table1;
         }
+
+
         public static DataTable _critset()
         {
             DataTable table1 = new DataTable("crit_info");

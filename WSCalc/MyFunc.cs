@@ -171,11 +171,15 @@ namespace WSCalc
         /// Check how many hits
         /// </summary>
         /// <returns></returns>
-        public static int amImulti(double da, double ta, double qa, string mjob, string sjob)
+        public static int amImulti(double da, double ta, double qa, string mjob, string sjob, int ml)
         {
             if (mjob == "WAR")
             {
                 da = da + 28;
+            }
+            else if (sjob == "WAR" && ml >= 5 )
+            {
+                da = da + 12;
             }
             else if (sjob == "WAR")
             {
@@ -185,6 +189,10 @@ namespace WSCalc
             if (mjob == "THF")
             {
                 ta = ta + 14;
+            }
+            else if (sjob == "THF" && ml >= 5 )
+            {
+                ta = ta + 5;
             }
 
             if (rnd.NextDouble() < (qa / 100))
